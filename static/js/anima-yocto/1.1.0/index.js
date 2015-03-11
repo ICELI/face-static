@@ -1,0 +1,1 @@
+define("anima-yocto/1.1.0/index",["anima-yocto-core/1.1.0/index","anima-yocto-event/1.0.1/index","anima-yocto-ajax/1.0.1/index","anima-yocto-touch/1.0.1/index"],function(o,a,n){var i=o("anima-yocto-core/1.1.0/index");o("anima-yocto-event/1.0.1/index"),o("anima-yocto-ajax/1.0.1/index"),o("anima-yocto-touch/1.0.1/index"),n.exports=i});

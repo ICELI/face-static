@@ -1,0 +1,248 @@
+/*
+  face By 郑斌 <wb-zhengbin@alipay.com>@alipay.com
+  Created By Anima
+ */
+
+body {
+    min-width:320px;
+    overflow-x: hidden;
+}
+img {
+    vertical-align: middle;
+}
+.fn-clear {
+    zoom: 1;
+}
+.fn-clear :after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.first-page {
+    background: url("../images/bg.jpg") no-repeat top center #feca50;
+    background-size: 100% auto;
+}
+.contrast-page {
+    background: #ffdf8a;
+}
+.btn-wrap {
+    text-align: center;
+    margin: 10px;
+}
+.btn {
+    display: inline-block;
+    background: #de97ff;
+    border: 2px solid #864378;
+    height: 50px;
+    width: 174px;
+    font-size: 22px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-go {
+    background: #de97ff;
+    border: 2px solid #864378;
+}
+.btn-share {
+    background: #77c3ff;
+    border: 2px solid #0a5cca;
+    text-shadow: 1px 1px 0 rgba(56, 160, 155, 0.75)
+}
+.fixed {
+    position: fixed;
+}
+.fixed-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* index */
+.barrage-wrap {
+    position: relative;
+    width: 100%;
+    height: 144px;
+    margin-top: 300px;
+    overflow: hidden;
+}
+.barrage-wrap ul {
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 0;
+    -webkit-transform: translate3d(100%, 0, 0px);
+}
+
+.barrage-wrap li {
+    position: absolute;
+    display: inline-block;
+    margin: 12px 0 0 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: rgba(255,255,255, 0.5);
+    font-size: 16px;
+    white-space: nowrap;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+}
+
+/*analyzing*/
+.title {
+    height: 68px;
+    border-bottom: 2px solid #fec06b;
+    background: #fee8bf;
+    background: -webkit-linear-gradient(top, #fef4dc, #fee8bf);
+    font-size: 30px;
+    line-height: 68px;
+    text-align: center;
+    color: #ea4c2a;
+    text-shadow: 2px 2px 2px #fff;
+}
+.photo-wrap {
+    position: relative;
+
+}
+.photo-wrap img {
+    width: 100%;
+    vertical-align: middle;
+}
+@keyframes analyzing
+{
+    from {top: 0;}
+    to {top: 100%;}
+}
+@-webkit-keyframes analyzing
+{
+    from {top: 0;}
+    to {top: 100%;}
+}
+.mask-line {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background: -webkit-linear-gradient(top, rgba(219, 255, 255, 0), rgba(219, 255,255, 0.85));
+    animation: analyzing 3s;
+    -webkit-animation: analyzing 3s infinite;
+}
+.analyzing {
+    height: 50px;
+    background: rgba(253, 232,191, 0.85);
+    line-height: 50px;
+    text-align: center;
+    color: #4b4747;
+    font-size: 14px;
+}
+
+/* contrast-result */
+.contrast-result {
+    position: relative;
+    margin-bottom: 30px;
+    height: 320px;
+    padding-bottom: 5px;
+    background: url("../images/bg2.png") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, 50% 0, 0 100%,
+    from(transparent),
+    color-stop(.5, transparent),
+    color-stop(.5, #ffdf8a),
+    to(#ffdf8a)
+    ),
+    -webkit-gradient(linear, 50% 0, 100% 100%,
+            from(transparent),
+            color-stop(.5, transparent),
+            color-stop(.5, #ffdf8a),
+            to(#ffdf8a)
+    );
+    background-size: 10px 5px;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+}
+.result-wrap {
+    position: relative;
+    width: 290px;
+    margin: 39px auto 15px;
+}
+.avatar {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.avatar img {
+    border: 5px solid #fec461;
+    border-radius: 6px;
+    background: #fec461;
+}
+.userImg {
+    float: left;
+}
+.userImg p,.userImg a {
+    color: #fff;
+}
+.userImg a {
+    text-decoration: underline;
+}
+.starImg {
+    float: right;
+}
+.result-percent {
+    position: absolute;
+    width: 78px;
+    height: 52px;
+    top: 100px;
+    left: 100px;
+    background: url("../images/l.png") no-repeat ;
+    background-size: 78px 52px;
+}
+.result-percent span {
+    display: inline-block;
+    margin: 13px 0 0 15px;
+    color: #e54c28;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+.J_changeAvatar {
+    font-size: 14px;
+    color: #f5e3c8;
+}
+.J_changeAvatar a {
+    font-size: 16px;
+}
+.result-money-wrap {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(187, 118, 23, 0.75);
+}
+.result-money {
+    font-size: 26px;
+    color: #77eaff;
+    text-shadow: 1px 1px 0 rgba(7, 79, 163, 0.75);
+}
+.result-description {
+    width: 313px;
+    height: 42px;
+    margin: 0 auto;
+    background: url("../images/on.png") no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: bold;
+    text-align: center;
+    color: #ea4c2a;
+    text-shadow: 2px 2px 2px #fff;
+}

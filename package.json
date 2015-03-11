@@ -1,0 +1,25 @@
+{
+  "name": "face",
+  "version": "1.0.0",
+  "author": "Ö£±ó <wb-zhengbin@alibaba-inc.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:wb-zhengbin/face.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "output": [
+      "./index.js",
+      "./index.css",
+      "./index.html",
+      "./img/*"
+    ],
+    "dependencies": {
+      "anima-yocto": "1.1.0",
+      "anima-bridge": "1.0.0"
+    }
+  }
+}
